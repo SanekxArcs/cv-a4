@@ -1,13 +1,36 @@
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
+
 import myPhoto from "./assets/ProfilePhoto.webp";
 import qrCode from "./assets/qr-code.svg";
 import qrCodePng from "./assets/qr-code.png";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const { ref: imageRef, inView: imageIsVisible } = useInView({
+    threshold: 1,
+  });
+  const { ref: nameRef, inView: nameIsVisible } = useInView({
+    threshold: 1,
+  });
+  const { ref: workRef, inView: workIsVisible } = useInView({
+    threshold: 1,
+  });
+  const { ref: projectsRef, inView: projectsIsVisible } = useInView({
+    threshold: 1,
+  });
+  const { ref: educationRef, inView: educationIsVisible } = useInView({
+    threshold: 1,
+  });
+  const { ref: coursesRef, inView: coursesIsVisible } = useInView({
+    threshold: 1,
+  });
+  const { ref: contactsRef, inView: contactsIsVisible } = useInView({
+    threshold: 1,
+  });
 
-  const isOpenHandler = () => {
-    return !setIsOpen;
+  const onClickHandle = () => {
+    setIsOpen(!isOpen);
   };
 
   const h3 = "text-2xl font-medium pb-2";
@@ -30,27 +53,35 @@ function App() {
   return (
     <div className="max-w-[1280px] mx-auto">
       <header
-        className={`sticky z-10 flex items-center justify-between px-4 py-2 m-2 rounded-md backdrop-blur-md top-2 bg-emerald-300/30 animate-fadeIn`}
+        className={`relative sticky z-10 flex items-center justify-between px-4 py-2 m-2 rounded-md backdrop-blur-md top-2 bg-emerald-300/30 animate-fadeIn`}
       >
         <div className="flex gap-2 items-center">
-          <h3 className="font-black text-sm">Oleksandr Dzisiak <span className=" font-normal">Frontend developer</span></h3>
-          <button className="flex flex-row flex-nowrap items-center px-2 py-1 transition-all duration-200 rounded-md hover:ring-2 hover:ring-emerald-500">
-            <i className="pr-2 fa-solid fa-print"></i>Print
-          </button>
+          {imageIsVisible ? "" : <img className="w-10 mx-auto animate-fadeInUp animate-duration-500" src={myPhoto} alt="Oleksandr Dzisiak photo"/>}
+          {nameIsVisible ? <p className="font-black text-sm ">Resume / CV</p> : <h3 className="font-black text-sm animate-fadeInUp animate-duration-500 transition-all duration-500">Oleksandr Dzisiak <h2 className=" font-normal text-sm ">Frontend developer</h2></h3>}
+          
         </div>
-
-        <nav className="flex gap-5 hidden">
-          <select className={hover} name="colors" id="theme">
-            <option value="choseTheme">-Theme-</option>
-            <option value="emerald">Emerald</option>
-          </select>
-
-          <div
-            className={`${hover} flex flex-col justify-between hidden h-full px-2 py-1 bg-transparent rounded-md cursor-pointer`}
+        <button className=" flex-row flex-nowrap items-center px-2 py-1 transition-all duration-200 rounded-md hover:ring-2 hover:ring-emerald-500 hidden md:flex">
+          <i class="fa-solid fa-file-arrow-down pr-2"></i>Save CV
+          </button>
+        <nav className="flex gap-5 md:hidden h-6 ">
+          <button onClick={onClickHandle}
+            className={`${hover} flex flex-col justify-between  h-full px-2 py-1 bg-transparent rounded-md cursor-pointer`}
           >
             <span className="h-0.5 w-5 rounded-full bg-emerald-800"></span>
             <span className="h-0.5 w-5 rounded-full bg-emerald-800"></span>
             <span className="h-0.5 w-5 rounded-full bg-emerald-800"></span>
+          </button>
+          <div className={`${isOpen ? "absolute top-16 right-0 bottom-0 animate-fadeIn" : "hidden"}`}>
+            <div className="flex flex-col items-center justify-between px-4 p-5 rounded-md backdrop-blur-md  bg-emerald-300/30 animate-fadeIn">
+              <button className="flex flex-row flex-nowrap items-center px-2 py-1 transition-all duration-200 rounded-md hover:ring-2 hover:ring-emerald-500">
+          <i class="fa-solid fa-file-arrow-down pr-2"></i>Save CV
+          </button>
+            <select className={`${hover} hidden`} name="colors" id="theme">
+            <option value="choseTheme">-Theme-</option>
+            <option value="emerald">Emerald</option>
+          </select>
+            </div>
+            
           </div>
         </nav>
       </header>
@@ -58,7 +89,8 @@ function App() {
       <div className="grid md:grid-cols-3">
         <aside className="flex flex-col gap-5 px-5">
           <img
-            className="w-56 mx-auto animate-fadeIn animate-duration-500"
+            ref={imageRef}
+            className="h-32 w-32 my-2 md:h-52 md:w-52 mx-auto animate-fadeIn animate-duration-500 md:my-12"
             src={myPhoto}
             alt="Oleksandr Dzisiak photo"
           />
@@ -140,6 +172,7 @@ function App() {
               <li>Leadership skills</li>
             </ul>
           </div>
+
           <div>
             <h3 className={h3}>Languages</h3>
             <ul className="flex flex-col gap-1">
@@ -411,6 +444,7 @@ function App() {
               <li>Racing</li>
             </ul>
           </div>
+
           <div className="hidden md:block">
             <h3 className={h3}>VCARD</h3>
             <a
@@ -431,7 +465,7 @@ function App() {
           <div className="hidden md:block">
             <h1 className="pb-0 text-6xl font-medium">Oleksandr Dzisiak</h1>
             <h2 className="pb-3 text-4xl">Frontend developer</h2>
-            <p className="text-lg">
+            <p ref={nameRef} className="text-lg">
               I am a highly motivated <b>developer</b> with a passion for
               creating visually appealing and user-friendly web applications. My
               skills include proficiency in
@@ -444,6 +478,32 @@ function App() {
               <b> love to write code</b> and see the results of my efforts.
             </p>
           </div>
+
+          <section>
+            <details open>
+              <summary className="flex"><h3 className={h3WE}>Projects</h3></summary>
+            </details>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="">
+                <h4>name</h4>
+                <p>This project technologies.</p>
+                <ul>
+                  <li>React.js</li>
+                  <li>Tailwind CSS</li>
+                  <li>Netlify</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+                <p>Features
+📖 Multi-Page Layout
+
+🎨 Styled with React-Bootstrap and Css with easy to customize colors
+
+📱 Fully Responsive</p>
+              </div>
+            </div>
+          </section>
+
+
           <section>
             <details open className="flex flex-col gap-5">
               <summary className="flex cursor-pointer ">
@@ -825,7 +885,10 @@ function App() {
           </section>
         </main>
       </div>
-      <footer>footer</footer>
+      <footer className="flex flex-col items-center justify-center px-4 py-2 m-2 rounded-md backdrop-blur-md top-2 bg-emerald-300/30 animate-fadeIn text-center mt-10">
+        <p className="border-b w-full  border-emerald-950/30 mb-2 p-2">Thank you for visiting my page, I am waiting for you to contact</p>
+        <p>© 2023 Food. Built using ReactJS by <a href="https://github.com/SanekxArcs" target="_blank" rel="noopener noreferrer">Sanekx Arcs</a> </p>
+      </footer>
     </div>
   );
 }
