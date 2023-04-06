@@ -423,7 +423,7 @@ function App() {
 
               <div className="grid lg:grid-cols-2 gap-2">
                 <a
-                  href="http://solar"
+                  href="http://solarsense.pl/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -483,7 +483,7 @@ function App() {
                 </a>
 
                 <a
-                  href="https://uwp-digital.netlify.app/"
+                  href="http://whatismyscreenresolution.net/multi-screen-test?site-url=https://uwp-digital.netlify.app/&w=1920&h=1080"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -537,7 +537,7 @@ function App() {
                     </div>
                   </a>
                   <a
-                    href="https://.netlify.app/"
+                    href="https://sushi-shop.netlify.app"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
