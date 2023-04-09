@@ -7,7 +7,12 @@ module.exports = withAnimations({
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      screens: {
+        print: {raw: 'print'},
+        screen: {raw: 'screen'},
+      },
+    },
   },
   plugins: [],
 });

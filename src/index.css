@@ -55,13 +55,12 @@
         @apply transition-all duration-200 rounded-md hover:ring-2 hover:ring-offset-2 hover:ring-emerald-500 hover:ring-offset-emerald-50;
     }
     .liContacts {
-        @apply flex flex-row gap-2 items-center px-2 py-0.5 backdrop-blur-md
-        ;
+        @apply flex flex-row gap-2 items-center px-2 py-0.5 backdrop-blur-md;
     }
     .loProjects {
         @apply px-1 text-xs rounded-full ring-1 ring-emerald-600 bg-emerald-100 text-emerald-950;
     }
     .liTechSkills {
-        @apply px-2 py-0.5 rounded-md bg-emerald-200/50 backdrop-blur-md 
-    }    
+        @apply px-2 py-0.5 rounded-md bg-emerald-200/50 backdrop-blur-md ;
+    }
 }

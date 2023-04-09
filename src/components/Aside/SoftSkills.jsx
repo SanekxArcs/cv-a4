@@ -3,7 +3,7 @@ import React from "react";
 const SoftSkills = () => {
   return (
     <>
-      <div className=" animate-delay-500 animate-fadeInLeft animate-duration-500">
+      <div className=" animate-delay-500 animate-fadeInLeft animate-duration-500 break-before-auto">
         <h3>Soft Skills</h3>
         <ul className="flex flex-col gap-1">
           <li>Communication</li>

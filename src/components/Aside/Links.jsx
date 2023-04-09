@@ -3,7 +3,7 @@ import React from "react";
 const Links = () => {
   return (
     <>
-      <div>
+      <div className="break-before-avoid">
         <h3>Links</h3>
         <ul className="flex flex-col gap-1">
           <li className={`liContacts hover-btn`}>
