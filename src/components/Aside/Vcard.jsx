@@ -1,21 +1,17 @@
 import React from "react";
-import qrCodePng from "../../assets/qr-code.png";
+import qrCodePng from "../../assets/qr-code.svg";
+import SVGComponent from "./QrCode";
 
 const Vcard = () => {
   return (
     <>
       <div className="hidden md:block break-before-auto">
         <h3>VCARD</h3>
-        <a
+        <a className="cursor-pointer"
           href="https://qr-coge-vcard-generator.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          <img
-            className={`hover max-w-56 max-h-56 mix-blend-multiply`}
-            src={qrCodePng}
-            alt=""
-          />
+        ><SVGComponent />
         </a>
       </div>
     </>

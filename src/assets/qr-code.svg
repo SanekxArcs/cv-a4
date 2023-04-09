@@ -1,9 +1,8 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 width="2145px" height="2145px" viewBox="0 0 2145 2145" enable-background="new 0 0 2145 2145" xml:space="preserve">
-<rect x="0" y="0" width="2145" height="2145" fill="rgb(255,255,255)" /><g transform="translate(66,66)"><g transform="translate(264,0) scale(0.33,0.33)"><g transform="" style="fill: rgb(2, 44, 34);">
+<rect x="0" y="0" width="2145" height="2145" fill="rgb(236, 253, 245)" /><g transform="translate(66,66)"><g transform="translate(264,0) scale(0.33,0.33)"><g transform="" style="fill: rgb(2, 44, 34);">
 <g>
 	<path d="M100,34.375c0-9.505-3.354-17.611-10.059-24.316C83.236,3.354,75.13,0,65.625,0h-31.25C24.87,0,16.764,3.353,10.059,10.059
 		S0,24.87,0,34.375v31.25c0,0.521,0.065,1.303,0.195,2.344H0V100h100V67.969h-0.195c0.132-1.041,0.195-1.822,0.195-2.344V34.375z"/>

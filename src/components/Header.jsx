@@ -1,5 +1,6 @@
 import React from "react";
 import myPhoto from "../assets/ProfilePhoto.webp";
+import myCv from "../assets/Oleksandr-Dzisiak.pdf";
 
 
 const Header = ({isOpen, onClickHandle, nameIsVisible, imageIsVisible}) => {
@@ -31,8 +32,8 @@ const Header = ({isOpen, onClickHandle, nameIsVisible, imageIsVisible}) => {
 
         <a className="flex-row items-center hidden px-2 py-1 flex-nowrap hover-btn md:flex"
           target="_blank"
-          href="../assets/Oleksandr Dzisiak.pdf"
-          download=""
+          href={myCv}
+          download="Oleksandr Dzisiak Resume.pdf"
         ><i className="pr-2 fa-solid fa-file-arrow-down"></i>Save CV</a>
         <nav className="flex h-6 gap-5 md:hidden ">
           <button
@@ -98,8 +99,8 @@ const Header = ({isOpen, onClickHandle, nameIsVisible, imageIsVisible}) => {
               >
                 <a
                   target="_blank"
-                  href="../assets/Oleksandr_Dzisiak_CV_c.pdf"
-                  download=""
+                  href={myCv}
+                  download="Oleksandr Dzisiak Resume.pdf"
                 ><i className="pr-2 fa-solid fa-file-arrow-down"></i>Save CV</a>
               </li>
             </ul>
