@@ -21,7 +21,8 @@ function App() {
   return (
     <> 
       <Header imageIsVisible={imageIsVisible} nameIsVisible={nameIsVisible} onClickHandle={onClickHandle} isOpen={isOpen}/>
-      <div className="grid sm:grid-cols-3 grid-cols-1 print:mt-10 ">
+      
+      <div className="grid grid-cols-1 sm:grid-cols-3 print:mt-10 ">
         <Aside imageRef={imageRef}/>
         <Main nameRef={nameRef}/>
       </div>
