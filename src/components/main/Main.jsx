@@ -3,6 +3,7 @@ import React from "react";
 const Main = ({ nameRef }) => {
   return (
     <>
+    
       <main className="flex flex-col col-span-2 gap-10 px-5">
         <a href="https://o-d.netlify.app/" target="_blank" rel="noopener noreferrer">
         <div id="top" className="hidden md:block">
@@ -39,7 +40,7 @@ const Main = ({ nameRef }) => {
                 rel="noopener noreferrer"
               >
                 <div
-                  className={`hover-btn bg-emerald-500/30 rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full`}
+                  className={`hover-btn bg-emerald-500/30 rounded-md backdrop-blur-md top-2 p-5 h-full`}
                 >
                   <h4 className="font-bold">Solar Sense</h4>
                   <p className="">Landing-page</p>
@@ -603,7 +604,7 @@ const Main = ({ nameRef }) => {
                   <i className="pr-2 fa-regular fa-calendar"></i>08.2021
                 </p>
               </div>
-              <div className="col-span-2  print:hidden">
+              <div className="col-span-2 print:hidden">
                 <h4>Thanks for the special conscientiousness and commitment to everyday work</h4>
                 <h5>Piotr Tokarski President GREEN SMART ENERGY sp. k.</h5>
                 <p>

@@ -1,9 +1,9 @@
 import React from "react";
-
+import { motion } from "framer-motion"
 const SoftSkills = () => {
   return (
     <>
-      <div className=" animate-delay-500 animate-fadeInLeft animate-duration-500 break-before-auto">
+      <motion.div className="break-before-auto">
         <h3>Soft Skills</h3>
         <ul className="flex flex-col gap-1">
           <li>Communication</li>
@@ -14,7 +14,7 @@ const SoftSkills = () => {
           <li>Creativity</li>
           <li>Leadership skills</li>
         </ul>
-      </div>
+      </motion.div>
     </>
   );
 };

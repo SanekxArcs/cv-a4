@@ -1,16 +1,20 @@
 import React from "react";
 import myPhoto from "../../assets/ProfilePhoto.webp";
+import { motion } from "framer-motion"
 
 const ProfilePhoto = ({imageRef}) => {
   return (
     <>
-    <a href="https://o-d.netlify.app/" target="_blank" rel="noopener noreferrer">
+    
+    <motion.a
+     className="relative" href="https://o-d.netlify.app/" target="_blank" rel="noopener noreferrer">
       <img
         ref={imageRef}
-        className="w-32 h-32 mx-auto my-2 rounded-full md:h-52 md:w-52 animate-fadeInLeft animate-duration-500 md:my-12"
+        className="z-10 mx-auto my-2 rounded-full md:h-52 md:w-52 md:my-12"
         src={myPhoto}
         alt="Oleksandr Dzisiak photo"
-      /></a>
+      />
+      </motion.a>
     </>
   );
 };

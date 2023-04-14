@@ -3,7 +3,7 @@ import React from "react";
 const TechSkills = () => {
   return (
     <>
-      <div className="animate-fadeInLeft animate-duration-500 animate-delay-200 break-before-auto">
+      <div className="break-before-auto">
         <h3>Tech Skills</h3>
         <ul className="flex flex-wrap gap-2">
           <li className={`liTechSkills hover-btn`}>HTML5</li>

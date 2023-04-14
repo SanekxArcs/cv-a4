@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import { motion } from "framer-motion"
 function DarkModeToggle() {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -20,12 +20,12 @@ function DarkModeToggle() {
     }, []);
 
   return (
-    <button
+    <motion.button layout 
     onClick={() => setIsDarkMode(!isDarkMode)}
       className="px-4 py-2 rounded-md hover-btn"
     ><i className={isDarkMode ? 'fa-solid fa-sun pr-2' : `fa-solid fa-moon pr-2`}></i>
       {isDarkMode ? 'Light Mode' : `Dark Mode`}
-    </button>
+    </motion.button>
   );
 }
 

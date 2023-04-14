@@ -10,7 +10,7 @@ const Header = ({ isOpen, onClickHandle, nameIsVisible, imageIsVisible }) => {
   return (
     <>
       <header
-        className={`sticky z-10 flex items-center justify-between px-4 py-2 m-2 rounded-md backdrop-blur-md top-2 bg-emerald-300/30 animate-fadeIn print:hidden relative`}
+        className={`sticky z-10 flex items-center justify-between px-4 py-2 m-2 rounded-md backdrop-blur-md top-2 bg-emerald-300/30 animate-fadeIn print:hidden relative h-14`}
       >
         <div className="flex items-center gap-2">
           {imageIsVisible ? (
