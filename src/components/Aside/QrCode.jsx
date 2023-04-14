@@ -11,9 +11,10 @@ const SVGComponent = (props) => (
     viewBox="0 0 2145 2145"
     enableBackground="new 0 0 2145 2145"
     xmlSpace="preserve"
+    
     {...props}
   >
-    <rect x={0} y={0} width={2145} height={2145} fill="rgb(236, 253, 245)" />
+    <rect x={0} y={0} width={2145} height={2145} fill="" />
     <g transform="translate(66,66)">
       <g transform="translate(264,0) scale(0.33,0.33)">
         <g
