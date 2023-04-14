@@ -35,7 +35,7 @@ function App() {
       <Footer/>
       <motion.div
     ref={ref}
-    className="w-5 h-5 bg-transparent rounded-full ring-2 ring-emerald-900 dark:ring-emerald-50"
+    className="hidden w-5 h-5 bg-transparent rounded-full lg:block ring-2 ring-emerald-900 dark:ring-emerald-50"
     animate={{ x, y }}
     transition={{
       type: "spring",
