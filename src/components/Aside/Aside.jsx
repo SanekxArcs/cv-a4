@@ -14,7 +14,7 @@ const Aside = ({imageRef}) => {
   return (
     <>
         <aside className="flex flex-col gap-5 px-5">
-          <ProfilePhoto imageRef={imageRef}/>
+          <ProfilePhoto imageRef={imageRef} />
           
           <Contacts/>
           <TechSkills/>

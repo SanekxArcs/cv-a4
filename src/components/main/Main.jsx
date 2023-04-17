@@ -1,6 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion"
 
 const Main = ({ nameRef }) => {
+  const bgProjects = `hover-btn bg-gradient-to-br from-violet-400/50 to-violet-800/50  rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full`;
+  const bgProjectsSmall =`hover-btn bg-gradient-to-br from-violet-400/50 to-violet-800/50 rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full flex justify-center items-center text-center`;
   return (
     <>
     
@@ -26,21 +29,21 @@ const Main = ({ nameRef }) => {
         </div></a>
 
         <section id="projects" className="break-before-auto">
-          <details open>
+          <motion.details open>
             <summary className="flex">
-              <h3 className="w-full mb-5 border-b border-emerald-950/30">
+              <h3 className="w-full mb-5 border-b border-violet-950/30">
                 Projects
               </h3>
             </summary>
 
-            <div className="grid gap-2 lg:grid-cols-2">
+            <motion.div className="grid gap-2 lg:grid-cols-2">
               <a
                 href="http://solarsense.pl/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div
-                  className={`hover-btn bg-emerald-500/30 rounded-md backdrop-blur-md top-2 p-5 h-full`}
+                  className={bgProjects}
                 >
                   <h4 className="font-bold">Solar Sense</h4>
                   <p className="">Landing-page</p>
@@ -71,7 +74,7 @@ const Main = ({ nameRef }) => {
                 rel="noopener noreferrer"
               >
                 <div
-                  className={`hover-btn bg-emerald-500/30 rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full`}
+                  className={bgProjects}
                 >
                   <h4 className="font-bold">LIBERTY IMMIGRATION</h4>
                   <p className="">Landing-page</p>
@@ -102,7 +105,7 @@ const Main = ({ nameRef }) => {
                 rel="noopener noreferrer"
               >
                 <div
-                  className={`hover-btn bg-emerald-500/30 rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full`}
+                  className={bgProjects}
                 >
                   <h4 className="font-bold">UWP-DIGITAL</h4>
                   <p className="">Corporate</p>
@@ -132,7 +135,7 @@ const Main = ({ nameRef }) => {
                   rel="noopener noreferrer"
                 >
                   <div
-                    className={`hover-btn bg-emerald-500/30 rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full flex justify-center items-center text-center`}
+                    className={bgProjectsSmall}
                   >
                     <h4 className="text-base font-bold">Accounting Employees SPA</h4>
                   </div>
@@ -143,7 +146,7 @@ const Main = ({ nameRef }) => {
                   rel="noopener noreferrer"
                 >
                   <div
-                    className={`hover-btn bg-emerald-500/30 rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full flex justify-center items-center text-center`}
+                    className={bgProjectsSmall}
                   >
                     <h4 className="text-base font-bold">
                       Tip calculator for many peoples SPA
@@ -156,7 +159,7 @@ const Main = ({ nameRef }) => {
                   rel="noopener noreferrer"
                 >
                   <div
-                    className={`hover-btn bg-emerald-500/30 rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full flex justify-center items-center text-center`}
+                    className={bgProjectsSmall}
                   >
                     <h4 className="text-base font-bold">Sushi Shop SPA</h4>
                   </div>
@@ -167,20 +170,20 @@ const Main = ({ nameRef }) => {
                   rel="noopener noreferrer"
                 >
                   <div
-                    className={`hover-btn bg-emerald-500/30 rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full flex justify-center items-center text-center`}
+                    className={bgProjectsSmall}
                   >
                     <h4 className="text-base font-bold">QR-Code vcard generator SPA</h4>
                   </div>
                 </a>
               </div>
-            </div>
-          </details>
+            </motion.div>
+          </motion.details>
         </section>
 
         <section id="work" className="break-before-auto">
           <details open className="flex flex-col gap-5">
             <summary className="flex cursor-pointer ">
-              <h3 className="w-full mb-5 border-b border-emerald-950/30">
+              <h3 className="w-full mb-5 border-b border-violet-950/30">
                 Work experience
               </h3>
             </summary>
@@ -270,9 +273,9 @@ const Main = ({ nameRef }) => {
 
               <div className="break-before-page">
                 <h4>
-                  <span className="text-sm text-emerald-950/70">from </span>
+                  <span className="text-sm text-violet-950/70">from </span>
                   Electrician
-                  <span className="text-sm text-emerald-950/70"> to </span>
+                  <span className="text-sm text-violet-950/70"> to </span>
                   Electrical Engineer
                 </h4>
                 <h5>
@@ -321,9 +324,9 @@ const Main = ({ nameRef }) => {
 
               <div>
                 <h4>
-                  <span className="text-sm text-emerald-950/70">from </span>
+                  <span className="text-sm text-violet-950/70">from </span>
                   Trainee Frontend Developer
-                  <span className="text-sm text-emerald-950/70"> to </span>
+                  <span className="text-sm text-violet-950/70"> to </span>
                   Junior
                 </h4>
                 <h5>
@@ -374,9 +377,9 @@ const Main = ({ nameRef }) => {
 
               <div>
                 <h4>
-                  <span className="text-sm text-emerald-950/70">from </span>
+                  <span className="text-sm text-violet-950/70">from </span>
                   IT Support
-                  <span className="text-sm text-emerald-950/70"> to </span>
+                  <span className="text-sm text-violet-950/70"> to </span>
                   Department manager
                 </h4>
                 <h5>
@@ -416,9 +419,9 @@ const Main = ({ nameRef }) => {
               </div>
               <div>
                 <h4>
-                  <span className="text-sm text-emerald-950/50">from </span>
+                  <span className="text-sm text-violet-950/50">from </span>
                   Warehouseman
-                  <span className="text-sm text-emerald-950/50"> to </span>
+                  <span className="text-sm text-violet-950/50"> to </span>
                   Department manager
                 </h4>
                 <h5>
@@ -482,9 +485,9 @@ const Main = ({ nameRef }) => {
               <div>
                 <h4>
                   Employee of the desalination plant department
-                  <span className="text-sm text-emerald-950/50">from </span>
+                  <span className="text-sm text-violet-950/50">from </span>
                   V3
-                  <span className="text-sm text-emerald-950/50"> to </span>
+                  <span className="text-sm text-violet-950/50"> to </span>
                   V5
                 </h4>
                 <h5>
@@ -517,7 +520,7 @@ const Main = ({ nameRef }) => {
         <section id="education" className="break-before-auto">
           <details open>
             <summary className="flex w-full cursor-pointer ">
-              <h3 className="w-full mb-5 border-b border-emerald-950/30">
+              <h3 className="w-full mb-5 border-b border-violet-950/30">
                 Education
               </h3>
             </summary>
@@ -555,7 +558,7 @@ const Main = ({ nameRef }) => {
         <section id="courses" className="break-before-auto">
           <details open>
             <summary className="flex w-full cursor-pointer ">
-              <h3 className="w-full mb-5 border-b border-emerald-950/30">
+              <h3 className="w-full mb-5 border-b border-violet-950/30">
                 Training, courses, certificates
               </h3>
             </summary>
