@@ -33,7 +33,7 @@ function App() {
         <Main nameRef={nameRef}/>
       </motion.div>
       <Footer/>
-      <motion.div
+      {/* <motion.div
     ref={ref}
     className={`}hidden w-5 h-5 bg-transparent rounded-full pointer-events-none lg:block ring-2 ring-violet-900 dark:ring-violet-50`}
     animate={{ x, y }}
@@ -42,7 +42,7 @@ function App() {
       damping: 20,
       stiffness: 100,
       restDelta: 0.001
-    }}></motion.div>
+    }}></motion.div> */}
     </>
   );
 }
