@@ -11,7 +11,7 @@ const SVGComponent = (props) => (
     viewBox="0 0 2145 2145"
     enableBackground="new 0 0 2145 2145"
     xmlSpace="preserve"
-    
+    fill="transparent"
     {...props}
   >
     <rect x={0} y={0} width={2145} height={2145} fill="" />

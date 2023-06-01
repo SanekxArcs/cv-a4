@@ -1,5 +1,4 @@
 import React from "react";
-import qrCodePng from "../../assets/qr-code.svg";
 import SVGComponent from "./QrCode";
 
 const Vcard = () => {

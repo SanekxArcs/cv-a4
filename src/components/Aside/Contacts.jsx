@@ -1,9 +1,11 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const Contacts = () => {
   return (
     <>
-      <div className="animate-fadeInLeft animate-duration-500 break-before-auto">
+      <motion.div
+        className="break-before-auto"
+      >
         <details open>
           <summary className="flex cursor-pointer marker:hidden">
             <h3>Contacts</h3>
@@ -35,7 +37,7 @@ const Contacts = () => {
             </li>
           </ul>
         </details>
-      </div>
+      </motion.div>
     </>
   );
 };

@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
-
+import { useRef } from "react";
+import { motion } from "framer-motion";
 import Aside from "./components/Aside/Aside";
 import Header from "./components/Header";
 import Main from "./components/main/Main";
 import Footer from "./components/Footer";
 
 function App() {
+  const ref = useRef(null);
+
   const [isOpen, setIsOpen] = useState(false);
   const { ref: imageRef, inView: imageIsVisible } = useInView({
     threshold: 1,
@@ -19,13 +22,21 @@ function App() {
     setIsOpen(!isOpen);
   };
   return (
-    <> 
-      <Header imageIsVisible={imageIsVisible} nameIsVisible={nameIsVisible} onClickHandle={onClickHandle} isOpen={isOpen}/>
-      <div className="grid sm:grid-cols-3 grid-cols-1 print:mt-10 ">
-        <Aside imageRef={imageRef}/>
-        <Main nameRef={nameRef}/>
-      </div>
-      <Footer/>
+    <>
+      <Header
+        imageIsVisible={imageIsVisible}
+        nameIsVisible={nameIsVisible}
+        onClickHandle={onClickHandle}
+        isOpen={isOpen}
+      />
+
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-3 print:mt-10 "
+      >
+        <Aside imageRef={imageRef} />
+        <Main nameRef={nameRef} />
+      </motion.div>
+      <Footer />
     </>
   );
 }

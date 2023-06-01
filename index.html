@@ -15,6 +15,7 @@
   <meta name="application-name" content="Oleksandr Dzisiak">
   <meta name="msapplication-TileColor" content="#022c22">
   <meta name="msapplication-TileImage" content="./src/assets/mstile-144x144.png">
+  <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#022c22">
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,9 +26,13 @@
   <title>Oleksandr Dzisiak</title>
 </head>
 
-<body class="bg-emerald-50 print:bg-white text-emerald-950 max-w-[1170px] mx-auto  print:h-[29.7cm] print:w-full ">
+<body class="bg-gradient-to-br from-emerald-50 to-emerald-100 text-emerald-900 dark:bg-gradient-to-br dark:from-emerald-950 dark:to-emerald-800 print:bg-white dark:text-emerald-50 max-w-[1170px] mx-auto  print:h-[29.7cm] print:w-full ">
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+  <script>function updateColorScheme(isDark) {
+    const colorScheme = isDark ? 'dark' : 'light';
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', colorScheme);
+  }</script>
 </body>
 
 </html>
