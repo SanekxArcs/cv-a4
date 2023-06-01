@@ -2,36 +2,49 @@ import React from "react";
 import { motion } from "framer-motion"
 
 const Main = ({ nameRef }) => {
-  const bgProjects = `hover-btn bg-gradient-to-br from-violet-400/50 to-violet-800/50  rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full`;
-  const bgProjectsSmall =`hover-btn bg-gradient-to-br from-violet-400/50 to-violet-800/50 rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full flex justify-center items-center text-center`;
+  const bgProjects = `hover-btn bg-gradient-to-br from-emerald-400/50 to-emerald-800/50  rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full`;
+  const bgProjectsSmall = `hover-btn bg-gradient-to-br from-emerald-400/50 to-emerald-800/50 rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full flex justify-center items-center text-center`;
   return (
     <>
-    
-      <main className="flex flex-col col-span-2 gap-10 px-5">
-        <a href="https://o-d.netlify.app/" target="_blank" rel="noopener noreferrer">
-        <div id="top" className="hidden md:block">
-          
-          <h1>Oleksandr Dzisiak</h1>
-          <h2>Frontend developer</h2>
-          <p ref={nameRef} className="text-lg">
-            I am a highly motivated <b>developer</b> with a passion for creating
-            visually appealing and user-friendly web applications. My skills
-            include proficiency in
-            <b> HTML, CSS, JavaScript,</b> as well as experience with popular
-            frameworks such as <b>React.js</b>. I am always eager to learn new
-            technologies and stay current with industry trends. I am a quick
-            learner and a team player, and I am dedicated to delivering
-            high-quality work on time. And i love to refactor code and
-            constantly learn new things in JS,
-            <b> love to write code</b> and see the results of my efforts. <br />
-            <span className="text-sm"><i className="pr-2 fa-solid fa-link"></i>Click here to see my latest resume update</span> 
-          </p>
-        </div></a>
+      <motion.main
+        initial={{ opacity: 0, x: "100vw" }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        viewport={true}
+        className="flex flex-col col-span-2 gap-10 px-5"
+      >
+        <a
+          href="https://o-d.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div id="top" className="hidden md:block">
+            <motion.h1>Oleksandr Dzisiak</motion.h1>
+            <motion.h2>Frontend developer</motion.h2>
+            <motion.p ref={nameRef} className="text-lg">
+              I am a highly motivated <b>developer</b> with a passion for
+              creating visually appealing and user-friendly web applications. My
+              skills include proficiency in
+              <b> HTML, CSS, JavaScript,</b> as well as experience with popular
+              frameworks such as <b>React.js</b>. I am always eager to learn new
+              technologies and stay current with industry trends. I am a quick
+              learner and a team player, and I am dedicated to delivering
+              high-quality work on time. And i love to refactor code and
+              constantly learn new things in JS,
+              <b> love to write code</b> and see the results of my efforts.{" "}
+              <br />
+              <span className="text-sm">
+                <i className="pr-2 fa-solid fa-link"></i>Click here to see my
+                latest resume update
+              </span>
+            </motion.p>
+          </div>
+        </a>
 
         <section id="projects" className="break-before-auto">
           <motion.details open>
             <summary className="flex">
-              <h3 className="w-full mb-5 border-b border-violet-950/30">
+              <h3 className="w-full mb-5 border-b border-emerald-950/30">
                 Projects
               </h3>
             </summary>
@@ -42,9 +55,7 @@ const Main = ({ nameRef }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div
-                  className={bgProjects}
-                >
+                <div className={bgProjects}>
                   <h4 className="font-bold">Solar Sense</h4>
                   <p className="">Landing-page</p>
                   <p>Features:</p>
@@ -73,9 +84,7 @@ const Main = ({ nameRef }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div
-                  className={bgProjects}
-                >
+                <div className={bgProjects}>
                   <h4 className="font-bold">LIBERTY IMMIGRATION</h4>
                   <p className="">Landing-page</p>
                   <p>Features:</p>
@@ -104,9 +113,7 @@ const Main = ({ nameRef }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div
-                  className={bgProjects}
-                >
+                <div className={bgProjects}>
                   <h4 className="font-bold">UWP-DIGITAL</h4>
                   <p className="">Corporate</p>
                   <p>Features:</p>
@@ -134,10 +141,10 @@ const Main = ({ nameRef }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div
-                    className={bgProjectsSmall}
-                  >
-                    <h4 className="text-base font-bold">Accounting Employees SPA</h4>
+                  <div className={bgProjectsSmall}>
+                    <h4 className="text-base font-bold">
+                      Accounting Employees SPA
+                    </h4>
                   </div>
                 </a>
                 <a
@@ -145,9 +152,7 @@ const Main = ({ nameRef }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div
-                    className={bgProjectsSmall}
-                  >
+                  <div className={bgProjectsSmall}>
                     <h4 className="text-base font-bold">
                       Tip calculator for many peoples SPA
                     </h4>
@@ -158,9 +163,7 @@ const Main = ({ nameRef }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div
-                    className={bgProjectsSmall}
-                  >
+                  <div className={bgProjectsSmall}>
                     <h4 className="text-base font-bold">Sushi Shop SPA</h4>
                   </div>
                 </a>
@@ -169,10 +172,10 @@ const Main = ({ nameRef }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div
-                    className={bgProjectsSmall}
-                  >
-                    <h4 className="text-base font-bold">QR-Code vcard generator SPA</h4>
+                  <div className={bgProjectsSmall}>
+                    <h4 className="text-base font-bold">
+                      QR-Code vcard generator SPA
+                    </h4>
                   </div>
                 </a>
               </div>
@@ -183,7 +186,7 @@ const Main = ({ nameRef }) => {
         <section id="work" className="break-before-auto">
           <details open className="flex flex-col gap-5">
             <summary className="flex cursor-pointer ">
-              <h3 className="w-full mb-5 border-b border-violet-950/30">
+              <h3 className="w-full mb-5 border-b border-emerald-950/30">
                 Work experience
               </h3>
             </summary>
@@ -203,19 +206,21 @@ const Main = ({ nameRef }) => {
                 </p>
                 <details open className="">
                   <summary className="flex cursor-pointer">
-                    <h6 className="transition-all hover:font-normal">Short job Description:</h6>
-                    </summary>
-                    <ul className="pl-5 list-disc ">
-                  <li>Create design and landing-page solarsense.pl</li>
-                  <li>
-                    The project is currently underway for the development of a
-                    corporate website and e-commerce platform
-                  </li>
-                  <li>A calculation tool is currently being developed</li>
-                  <li>The execution of 3D visualization projects PV</li>
-                </ul>
+                    <h6 className="transition-all hover:font-normal">
+                      Short job Description:
+                    </h6>
+                  </summary>
+                  <ul className="pl-5 list-disc ">
+                    <li>Create design and landing-page solarsense.pl</li>
+                    <li>
+                      The project is currently underway for the development of a
+                      corporate website and e-commerce platform
+                    </li>
+                    <li>A calculation tool is currently being developed</li>
+                    <li>The execution of 3D visualization projects PV</li>
+                  </ul>
                 </details>
-                
+
                 <div className={`hover-btn`}>
                   <i className="pr-2 fa-solid fa-globe"></i>
                   <a href="https://solarsense.pl/">solarsense.pl</a>
@@ -238,7 +243,9 @@ const Main = ({ nameRef }) => {
 
                 <details open>
                   <summary className="flex cursor-pointer ">
-                    <h6 className="transition-all hover:font-normal">Short job Description:</h6>
+                    <h6 className="transition-all hover:font-normal">
+                      Short job Description:
+                    </h6>
                   </summary>
                   <p className="py-2">
                     As a Frontend Developer at Best Solution Eco, my
@@ -273,9 +280,9 @@ const Main = ({ nameRef }) => {
 
               <div className="break-before-page">
                 <h4>
-                  <span className="text-sm text-violet-950/70">from </span>
+                  <span className="text-sm text-emerald-950/70">from </span>
                   Electrician
-                  <span className="text-sm text-violet-950/70"> to </span>
+                  <span className="text-sm text-emerald-950/70"> to </span>
                   Electrical Engineer
                 </h4>
                 <h5>
@@ -324,9 +331,9 @@ const Main = ({ nameRef }) => {
 
               <div>
                 <h4>
-                  <span className="text-sm text-violet-950/70">from </span>
+                  <span className="text-sm text-emerald-950/70">from </span>
                   Trainee Frontend Developer
-                  <span className="text-sm text-violet-950/70"> to </span>
+                  <span className="text-sm text-emerald-950/70"> to </span>
                   Junior
                 </h4>
                 <h5>
@@ -339,29 +346,33 @@ const Main = ({ nameRef }) => {
                 <p>
                   <i className="pr-2 fa-regular fa-calendar"></i>01.2019 –
                   11.2020
-                </p><details open className="">
+                </p>
+                <details open className="">
                   <summary className="flex cursor-pointer">
-                    <h6 className="transition-all hover:font-normal">Short job Description:</h6>
-                    </summary>
-                <ul className="pl-5 list-disc ">
-                  <li>Use HTML, CSS, and JavaScript to build websites</li>
-                  <li>
-                    Use CSS preprocessors such as SASS or LESS to write more
-                    efficient CSS code
-                  </li>
-                  <li>
-                    Test and debug website across multiple browsers and devices
-                  </li>
-                  <li>Optimize website for performance and SEO</li>
-                  <li>
-                    Work closely with back-end developers to ensure seamless
-                    integration of frontend and back-end functionality
-                  </li>
-                  <li>
-                    Eight projects were made, which includes an online store, a
-                    forum, a landing pages, and a business card sites
-                  </li>
-                </ul>
+                    <h6 className="transition-all hover:font-normal">
+                      Short job Description:
+                    </h6>
+                  </summary>
+                  <ul className="pl-5 list-disc ">
+                    <li>Use HTML, CSS, and JavaScript to build websites</li>
+                    <li>
+                      Use CSS preprocessors such as SASS or LESS to write more
+                      efficient CSS code
+                    </li>
+                    <li>
+                      Test and debug website across multiple browsers and
+                      devices
+                    </li>
+                    <li>Optimize website for performance and SEO</li>
+                    <li>
+                      Work closely with back-end developers to ensure seamless
+                      integration of frontend and back-end functionality
+                    </li>
+                    <li>
+                      Eight projects were made, which includes an online store,
+                      a forum, a landing pages, and a business card sites
+                    </li>
+                  </ul>
                 </details>
                 <div className={`hover-btn`}>
                   <i className="pr-2 fa-solid fa-globe"></i>
@@ -377,9 +388,9 @@ const Main = ({ nameRef }) => {
 
               <div>
                 <h4>
-                  <span className="text-sm text-violet-950/70">from </span>
+                  <span className="text-sm text-emerald-950/70">from </span>
                   IT Support
-                  <span className="text-sm text-violet-950/70"> to </span>
+                  <span className="text-sm text-emerald-950/70"> to </span>
                   Department manager
                 </h4>
                 <h5>
@@ -396,15 +407,28 @@ const Main = ({ nameRef }) => {
                 </p>
                 <details close className="">
                   <summary className="flex cursor-pointer">
-                    <h6 className="transition-all hover:font-normal">Short job Description:</h6>
-                    </summary>
-                <ul className="pl-5 list-disc ">
-                  <li>As an experienced professional, I have developed skills in the organization and management of meetings, as well as in logistics and warehouse work. I am adept at organizing documentation, procuring office supplies, and optimizing company costs through favorable leasing contracts. I have experience servicing company fleets and purchasing office equipment, and ensuring smooth circulation of incoming and outgoing mail. Additionally, I am skilled in organizing business trips, managing the schedules of the management, and managing the company's archives.</li>
-                  <li>
-                    Create new and maintenance of the main website of the
-                    theater.
-                  </li>
-                </ul>
+                    <h6 className="transition-all hover:font-normal">
+                      Short job Description:
+                    </h6>
+                  </summary>
+                  <ul className="pl-5 list-disc ">
+                    <li>
+                      As an experienced professional, I have developed skills in
+                      the organization and management of meetings, as well as in
+                      logistics and warehouse work. I am adept at organizing
+                      documentation, procuring office supplies, and optimizing
+                      company costs through favorable leasing contracts. I have
+                      experience servicing company fleets and purchasing office
+                      equipment, and ensuring smooth circulation of incoming and
+                      outgoing mail. Additionally, I am skilled in organizing
+                      business trips, managing the schedules of the management,
+                      and managing the company's archives.
+                    </li>
+                    <li>
+                      Create new and maintenance of the main website of the
+                      theater.
+                    </li>
+                  </ul>
                 </details>
                 <div className={`hover-btn`}>
                   <i className="pr-2 fa-solid fa-globe"></i>
@@ -419,9 +443,9 @@ const Main = ({ nameRef }) => {
               </div>
               <div>
                 <h4>
-                  <span className="text-sm text-violet-950/50">from </span>
+                  <span className="text-sm text-emerald-950/50">from </span>
                   Warehouseman
-                  <span className="text-sm text-violet-950/50"> to </span>
+                  <span className="text-sm text-emerald-950/50"> to </span>
                   Department manager
                 </h4>
                 <h5>
@@ -485,9 +509,9 @@ const Main = ({ nameRef }) => {
               <div>
                 <h4>
                   Employee of the desalination plant department
-                  <span className="text-sm text-violet-950/50">from </span>
+                  <span className="text-sm text-emerald-950/50">from </span>
                   V3
-                  <span className="text-sm text-violet-950/50"> to </span>
+                  <span className="text-sm text-emerald-950/50"> to </span>
                   V5
                 </h4>
                 <h5>
@@ -504,15 +528,17 @@ const Main = ({ nameRef }) => {
                 </p>
                 <details close className="print:hidden">
                   <summary className="flex cursor-pointer">
-                    <h6 className="transition-all hover:font-normal">Short job Description:</h6>
-                    </summary>
-                    <ul className="pl-5 list-disc ">
-                      <li>Hardware monitoring</li>
-                      <li>Performing water treatment works</li>
-                      <li>Performing other prescribed work instructions</li>
-                    </ul>
+                    <h6 className="transition-all hover:font-normal">
+                      Short job Description:
+                    </h6>
+                  </summary>
+                  <ul className="pl-5 list-disc ">
+                    <li>Hardware monitoring</li>
+                    <li>Performing water treatment works</li>
+                    <li>Performing other prescribed work instructions</li>
+                  </ul>
                 </details>
-                </div>
+              </div>
             </div>
           </details>
         </section>
@@ -520,7 +546,7 @@ const Main = ({ nameRef }) => {
         <section id="education" className="break-before-auto">
           <details open>
             <summary className="flex w-full cursor-pointer ">
-              <h3 className="w-full mb-5 border-b border-violet-950/30">
+              <h3 className="w-full mb-5 border-b border-emerald-950/30">
                 Education
               </h3>
             </summary>
@@ -558,7 +584,7 @@ const Main = ({ nameRef }) => {
         <section id="courses" className="break-before-auto">
           <details open>
             <summary className="flex w-full cursor-pointer ">
-              <h3 className="w-full mb-5 border-b border-violet-950/30">
+              <h3 className="w-full mb-5 border-b border-emerald-950/30">
                 Training, courses, certificates
               </h3>
             </summary>
@@ -608,7 +634,10 @@ const Main = ({ nameRef }) => {
                 </p>
               </div>
               <div className="col-span-2 print:hidden">
-                <h4>Thanks for the special conscientiousness and commitment to everyday work</h4>
+                <h4>
+                  Thanks for the special conscientiousness and commitment to
+                  everyday work
+                </h4>
                 <h5>Piotr Tokarski President GREEN SMART ENERGY sp. k.</h5>
                 <p>
                   <i className="pr-2 fa-regular fa-calendar"></i>11.2021
@@ -617,7 +646,7 @@ const Main = ({ nameRef }) => {
             </div>
           </details>
         </section>
-      </main>
+      </motion.main>
     </>
   );
 };

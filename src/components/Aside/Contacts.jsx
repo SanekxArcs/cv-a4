@@ -4,10 +4,7 @@ const Contacts = () => {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
-        className=" break-before-auto"
+        className="break-before-auto"
       >
         <details open>
           <summary className="flex cursor-pointer marker:hidden">

@@ -1,9 +1,12 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const TechSkills = () => {
   return (
     <>
-      <div className="break-before-auto">
+      <motion.div
+        className="break-before-auto"
+      >
         <h3>Tech Skills</h3>
         <ul className="flex flex-wrap gap-2">
           <li className={`liTechSkills hover-btn`}>HTML5</li>
@@ -32,7 +35,7 @@ const TechSkills = () => {
           <li className={`liTechSkills hover-btn`}>Lightroom</li>
           <li className={`liTechSkills hover-btn`}>Framer Motion</li>
         </ul>
-      </div>
+      </motion.div>
     </>
   );
 };
