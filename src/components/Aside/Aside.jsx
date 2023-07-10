@@ -19,7 +19,7 @@ const Aside = ({imageRef}) => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
         viewport={true}
-        className="flex flex-col gap-5 px-5"
+        className="flex flex-col gap-5 px-5 cursor-default"
       >
         <ProfilePhoto imageRef={imageRef} />
 

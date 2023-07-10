@@ -3,7 +3,7 @@ import React from "react";
 const Language = () => {
   return (
     <>
-      <div className="break-before-auto">
+      <div className="select-none break-before-auto">
         <h3>Languages</h3>
         <ul className="flex flex-col gap-1">
           <li className="flex flex-row items-center gap-2">

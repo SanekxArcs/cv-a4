@@ -3,7 +3,7 @@ import React from "react";
 const Interests = () => {
   return (
     <>
-      <div className="break-before-auto print:hidden">
+      <div className="select-none break-before-auto print:hidden">
         <h3>Interests</h3>
         <ul className="flex flex-col gap-1">
           <li>Development</li>

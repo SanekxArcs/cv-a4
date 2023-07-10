@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 const SoftSkills = () => {
   return (
     <>
-      <motion.div className="break-before-auto">
+      <motion.div className="cursor-default select-none break-before-auto">
         <h3>Soft Skills</h3>
         <ul className="flex flex-col gap-1">
           <li>Communication</li>

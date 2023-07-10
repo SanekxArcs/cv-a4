@@ -33,7 +33,7 @@ h3 {
 }
 
 .h3WE {
-    @apply w-full text-3xl font-medium pb-2 border-b border-emerald-950/30 mb-5 mt-5;
+    @apply w-full pb-2 mt-5 mb-5 text-3xl font-medium border-b border-emerald-950/30;
     }
 
 h4 {
@@ -69,7 +69,7 @@ p {
     }
 
 .liTechSkills {
-    @apply px-2 py-0.5 rounded-md bg-emerald-200/50 backdrop-blur-md;
+    @apply px-2 py-0.5 rounded-md bg-emerald-200/50 backdrop-blur-md cursor-default;
     }
                                 }
                                 @tailwind components;

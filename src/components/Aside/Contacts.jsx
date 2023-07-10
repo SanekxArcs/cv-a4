@@ -8,7 +8,7 @@ const Contacts = () => {
       >
         <details open>
           <summary className="flex cursor-pointer marker:hidden">
-            <h3>Contacts</h3>
+            <h3 className="pointer-events-none select-none">Contacts</h3>
           </summary>
           <ul className="flex flex-col items-start justify-start gap-2">
             <li className="text-sm liContacts lg:text-base hover-btn">
