@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import myPhoto from "../assets/profile.png";
-// import myCv from "../assets/Oleksandr-Dzisiak.pdf";
+import myCv from "../assets/Vadym Lanovenko.pdf";
 import DarkModeToggle from "./DarkModeToggle";
 
 const Header = ({ isOpen, onClickHandle, nameIsVisible, imageIsVisible }) => {
@@ -66,8 +66,8 @@ const Header = ({ isOpen, onClickHandle, nameIsVisible, imageIsVisible }) => {
             <a
               className="flex-row items-center hidden px-2 py-1 flex-nowrap hover-btn md:flex"
               target="_blank"
-              href=""
-              download="Oleksandr Dzisiak Resume.pdf"
+              href={myCv}
+              download="Vadym-Lanovenko-Resume.pdf"
             >
               <i className="pr-2 fa-solid fa-file-arrow-down"></i>Save CV
             </a>
@@ -119,8 +119,8 @@ const Header = ({ isOpen, onClickHandle, nameIsVisible, imageIsVisible }) => {
               <li className={classForMobileBtn}>
                 <a
                   target="_blank"
-                  href=""
-                  download="Oleksandr Dzisiak Resume.pdf"
+                  href={myCv}
+                  download="Vadym-Lanovenko-Resume.pdf"
                 >
                   <i className="pr-2 fa-solid fa-file-arrow-down"></i>Save CV
                 </a>
