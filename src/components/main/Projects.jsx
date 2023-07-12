@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  const bgProjects = `hover-btn bg-gradient-to-br from-emerald-400/50 to-emerald-800/50  rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full`;
-  const bgProjectsSmall = `hover-btn bg-gradient-to-br from-emerald-400/50 to-emerald-800/50 rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full flex justify-center items-center text-center`;
+  const bgProjects = `hover-btn bg-gradient-to-br from-emerald-200 to-emerald-300  rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full`;
+  const bgProjectsSmall = `hover-btn bg-gradient-to-br from-emerald-200 to-emerald-300 rounded-md backdrop-blur-md top-2 animate-fadeIn p-5 h-full flex justify-center items-center text-center`;
 
 const projectsData = [
   {
@@ -112,9 +112,7 @@ const projectsData2 = [
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div
-                className={project.description ? bgProjects : bgProjectsSmall}
-              >
+              <div className="h-full p-5 transition-all rounded-md bg-gradient-to-br from-emerald-200 dark:from-emerald-600 to-emerald-300 dark:to-emerald-700 top-2 animate-fadeIn">
                 <h4 className="font-bold">{project.title}</h4>
                 {project.description && (
                   <p className="">{project.description}</p>
@@ -146,7 +144,7 @@ const projectsData2 = [
               </div>
             </a>
           ))}
-          <div className="grid grid-cols-4 grid-rows-2 gap-2">
+          <div className="grid grid-cols-2 grid-rows-4 row-span-1 gap-2">
             {projectsData2.map((project, index) => (
               <a
                 key={index}
@@ -154,7 +152,7 @@ const projectsData2 = [
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className={bgProjectsSmall}>
+                <div className="flex items-center justify-center h-full px-5 text-center rounded-md hover-btn bg-gradient-to-br from-emerald-200 dark:from-emerald-600 to-emerald-300 dark:to-emerald-700 top-2 animate-fadeIn">
                   <h4 className="text-xs font-bold">{project.title}</h4>
                 </div>
               </a>

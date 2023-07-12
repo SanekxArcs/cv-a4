@@ -9,7 +9,7 @@ import Language from "./Language";
 import Links from "./Links";
 import Interests from "./Interests";
 import ProfilePhoto from "./ProfilePhoto";
-// import Vcard from "./Vcard";
+import Vcard from "./Vcard";
 
 const Aside = ({imageRef}) => {
   return (
@@ -29,7 +29,7 @@ const Aside = ({imageRef}) => {
         <Language />
         <Links />
         <Interests />
-        {/* <Vcard/> */}
+        <Vcard/>
       </motion.aside>
     </>
   );

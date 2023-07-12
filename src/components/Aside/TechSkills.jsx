@@ -16,7 +16,6 @@ const TechSkills = () => {
     "Redux",
     "Vite",
     "Git/GitHub",
-    "WebPack",
     "Netlify",
     "Vercel",
     "CMS platforms",
@@ -27,6 +26,7 @@ const TechSkills = () => {
     "Photoshop",
     "Lightroom",
     "Framer Motion",
+    "and other ...",
   ];
 
   return (
@@ -35,7 +35,7 @@ const TechSkills = () => {
         <h3 className="select-none">Tech Skills</h3>
         <ul className="flex flex-wrap gap-2">
           {techs.map((tech) => (
-            <li key={tech} className="liTechSkills hover-btn">
+            <li key={tech} className="liTechSkills hover-btn last:text-sm">
               {tech}
             </li>
           ))}

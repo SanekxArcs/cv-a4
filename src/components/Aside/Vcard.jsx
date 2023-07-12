@@ -4,7 +4,7 @@ import SVGComponent from "./QrCode";
 const Vcard = () => {
   return (
     <>
-      <div className="hidden md:block break-before-auto">
+      <div className="hidden break-before-auto print:block">
         <h3>VCARD</h3>
         <a className="cursor-pointer"
           href="https://qr-coge-vcard-generator.netlify.app/"
