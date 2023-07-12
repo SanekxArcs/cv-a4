@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <>
       <footer
-        className={`print:hidden flex flex-col items-center justify-center px-4 py-2 m-2 mt-10 text-center rounded-md backdrop-blur-md top-2 bg-emerald-300/30 animate-fadeIn`}
+        className={`print:hidden flex flex-col items-center justify-center px-4 py-2 m-2 mt-10 text-center rounded-md backdrop-blur-md top-2 bg-blue-300/30 animate-fadeIn`}
       >
-        <p className={`w-full p-2 mb-2 border-b border-emerald-950/30`}>
+        <p className={`w-full p-2 mb-2 border-b border-blue-950/30`}>
           Thank you for visiting my page, I am waiting for you to contact
         </p>
         <p>

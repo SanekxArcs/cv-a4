@@ -33,7 +33,7 @@ h3 {
 }
 
 .h3WE {
-    @apply w-full pb-2 mt-5 mb-5 text-3xl font-medium border-b border-emerald-950/30;
+    @apply w-full pb-2 mt-5 mb-5 text-3xl font-medium border-b border-blue-950/30;
     }
 
 h4 {
@@ -57,7 +57,7 @@ p {
 }
 
 .hover-btn {
-    @apply transition-all duration-200 rounded-md hover:ring-2 hover:ring-offset-2 hover:ring-emerald-500 hover:ring-offset-emerald-50;
+    @apply transition-all duration-200 rounded-md hover:ring-2 hover:ring-offset-2 hover:ring-blue-500 hover:ring-offset-blue-50;
     }
 
 .liContacts {
@@ -65,11 +65,11 @@ p {
 }
 
 .loProjects {
-    @apply px-1 text-xs rounded-full ring-1 ring-emerald-600 bg-emerald-100 text-emerald-950;
+    @apply px-1 text-xs rounded-full ring-1 ring-blue-600 bg-blue-100 text-blue-950;
     }
 
 .liTechSkills {
-    @apply px-2 py-0.5 rounded-md bg-emerald-200/50 backdrop-blur-md cursor-default;
+    @apply px-2 py-0.5 rounded-md bg-blue-200/50 backdrop-blur-md cursor-default;
     }
                                 }
                                 @tailwind components;

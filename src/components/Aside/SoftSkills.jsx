@@ -12,7 +12,6 @@ const SoftSkills = () => {
           <li>Adaptability</li>
           <li>Time management</li>
           <li>Creativity</li>
-          <li>Leadership skills</li>
         </ul>
       </motion.div>
     </>

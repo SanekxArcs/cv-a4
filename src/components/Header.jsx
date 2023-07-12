@@ -1,12 +1,12 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import myPhoto from "../assets/ProfilePhoto.webp";
-import myCv from "../assets/Oleksandr-Dzisiak.pdf";
+import myPhoto from "../assets/profile.png";
+// import myCv from "../assets/Oleksandr-Dzisiak.pdf";
 import DarkModeToggle from "./DarkModeToggle";
 
 const Header = ({ isOpen, onClickHandle, nameIsVisible, imageIsVisible }) => {
   const classForMobileBtn =
-    "w-full hover:ring-2 rounded-md transition-all py-1 duration-300 ring-emerald-400 ";
+    "w-full hover:ring-2 rounded-md transition-all py-1 duration-300 ring-blue-400 ";
 
   return (
     <>
@@ -15,7 +15,7 @@ const Header = ({ isOpen, onClickHandle, nameIsVisible, imageIsVisible }) => {
           initial={{ opacity: 0, scale: 0.5, y: -200 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className={`sticky z-10 flex items-center justify-between px-4 py-2 m-2 rounded-md bg-gradient-to-br  from-emerald-200/50 dark:from-emerald-600/50 to-emerald-300/50 dark:to-emerald-700/50 backdrop-blur-md top-2  print:hidden relative max-h-14`}
+          className={`sticky z-10 flex items-center justify-between px-4 py-2 m-2 rounded-md bg-gradient-to-br  from-blue-200/50 dark:from-blue-600/50 to-blue-300/50 dark:to-blue-700/50 backdrop-blur-md top-2  print:hidden relative max-h-14`}
         >
           <motion.div className="flex items-center gap-2">
             {imageIsVisible || (
@@ -27,7 +27,7 @@ const Header = ({ isOpen, onClickHandle, nameIsVisible, imageIsVisible }) => {
                 exit={{ opacity: 0, scale: 0.5, y: -200 }}
                 className="w-10 mx-auto"
                 src={myPhoto}
-                alt="Oleksandr Dzisiak photo"
+                alt="Vadym Lanovenko photo"
               />
             )}
             {nameIsVisible ? (
@@ -48,8 +48,11 @@ const Header = ({ isOpen, onClickHandle, nameIsVisible, imageIsVisible }) => {
                 exit={{ opacity: 0, scale: 0.5 }}
                 className="text-sm font-black transition-all duration-500 "
               >
-                Oleksandr Dzisiak <br />
-                <span className="text-sm font-normal ">Frontend developer</span>
+                Vadym Lanovenko
+                <br />
+                <span className="text-sm font-normal ">
+                  Photo editor / Retoucher
+                </span>
               </motion.h3>
             )}
           </motion.div>
@@ -63,7 +66,7 @@ const Header = ({ isOpen, onClickHandle, nameIsVisible, imageIsVisible }) => {
             <a
               className="flex-row items-center hidden px-2 py-1 flex-nowrap hover-btn md:flex"
               target="_blank"
-              href={myCv}
+              href=""
               download="Oleksandr Dzisiak Resume.pdf"
             >
               <i className="pr-2 fa-solid fa-file-arrow-down"></i>Save CV
@@ -91,44 +94,43 @@ const Header = ({ isOpen, onClickHandle, nameIsVisible, imageIsVisible }) => {
           </motion.div>
         </motion.header>
 
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5, y: "-100vh" }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className={`absolute sticky overflow-hidden left-0 right-0 z-10 md:hidden top-[72px] rounded-md mx-2 bg-gradient-to-br  from-emerald-200/50 dark:from-emerald-600/50 to-emerald-300/50 dark:to-emerald-700/50 backdrop-blur-md`}
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5, y: "-100vh" }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className={`absolute sticky overflow-hidden left-0 right-0 z-10 md:hidden top-[72px] rounded-md mx-2 bg-gradient-to-br  from-blue-200/50 dark:from-blue-600/50 to-blue-300/50 dark:to-blue-700/50 backdrop-blur-md`}
+          >
+            <ul
+              className={`flex flex-col gap-2 items-center justify-center w-full h-full px-5 py-10 text-center font-semibold`}
             >
-              <ul
-                className={`flex flex-col gap-2 items-center justify-center w-full h-full px-5 py-10 text-center font-semibold`}
-              >
-                <li className={classForMobileBtn}>
-                  <a href="#projects">Projects</a>
-                </li>
-                <li className={classForMobileBtn}>
-                  <a href="#work">Work Experience</a>
-                </li>
-                <li className={classForMobileBtn}>
-                  <a href="#education">Education</a>
-                </li>
-                <li className={classForMobileBtn}>
-                  <a href="#courses">Courses</a>
-                </li>
-                <li className={classForMobileBtn}>
-                  <a
-                    target="_blank"
-                    href={myCv}
-                    download="Oleksandr Dzisiak Resume.pdf"
-                  >
-                    <i className="pr-2 fa-solid fa-file-arrow-down"></i>Save CV
-                  </a>
-                </li>
-                <li>
-                  <DarkModeToggle />
-                </li>
-              </ul>
-            </motion.div>
-          )}
-
+              <li className={classForMobileBtn}>
+                <a href="#projects">Projects</a>
+              </li>
+              <li className={classForMobileBtn}>
+                <a href="#work">Work Experience</a>
+              </li>
+              <li className={classForMobileBtn}>
+                <a href="#education">Education</a>
+              </li>
+              <li className={classForMobileBtn}>
+                <a href="#courses">Courses</a>
+              </li>
+              <li className={classForMobileBtn}>
+                <a
+                  target="_blank"
+                  href=""
+                  download="Oleksandr Dzisiak Resume.pdf"
+                >
+                  <i className="pr-2 fa-solid fa-file-arrow-down"></i>Save CV
+                </a>
+              </li>
+              <li>
+                <DarkModeToggle />
+              </li>
+            </ul>
+          </motion.div>
+        )}
       </AnimatePresence>
     </>
   );

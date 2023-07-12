@@ -3,18 +3,12 @@ import React from "react";
 const Education = () => {
   const educationData = [
     {
-      institution:
-        'National Technikal University of Ukraine "Igor Sikorsky Kyiv Politechnic Institute"',
-      specialization: "Electrikal Engineering and Electrotechnics",
-    },
-    {
-      institution: "Kyiv College of Energy Politechnic Institute",
-      specialization:
-        "Maintenance of automated power equipment in power plants",
+      institution: "Vinnytsia National Technical University",
+      specialization: "Master's degree in radio engineering",
     },
     {
       institution: "Netishyn School №3",
-      specialization: "Philology",
+      specialization: "Physical and Mathematical",
     },
   ];
 
@@ -22,7 +16,7 @@ const Education = () => {
     <section id="education" className="break-before-auto">
       <details open>
         <summary className="flex w-full cursor-pointer">
-          <h3 className="w-full mb-5 border-b border-emerald-950/30">
+          <h3 className="w-full mb-5 border-b border-blue-950/30">
             Education
           </h3>
         </summary>

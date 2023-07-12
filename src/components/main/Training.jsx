@@ -3,40 +3,11 @@ import React from "react";
 const Training = () => {
   const courses = [
     {
-      title: "The Complete JavaScript Course 2022: From Zero to Expert!",
-      platform: "Udemy",
-      date: "10.2022",
-    },
-    {
-      title: "Build a responsive real-world website with HTML and CSS",
-      platform: "Udemy",
-      date: "09.2022",
-    },
-    {
-      title: "Java Script",
-      platform: "Grasshopper by Google",
-      date: "07.2022",
-    },
-    {
-      title: "HTML, CSS, JS. Professional website layout.",
-      platform: "HTML Academy",
-      date: "12.2019",
-    },
-    {
-      title: "Basics of digital marketing",
-      platform: "Digital workshop by Google",
-      date: "10.2019",
-    },
-    {
-      title: "Mounting Technician Photovoltaic Systems.",
-      platform: "EcoProjekt i CW Lundberg",
-      date: "08.2021",
-    },
-    {
       title:
-        "Thanks for the special conscientiousness and commitment to everyday work",
-      platform: "Piotr Tokarski President GREEN SMART ENERGY sp. k.",
-      date: "11.2021",
+        "Diploma Educational Computer training course and obtaining the qualification of Personal Computer Operator (PCO)",
+      platform: "Grand",
+      date: "30.04.2013",
+      seialNumber: "№ 2301761",
     },
   ];
 
@@ -44,7 +15,7 @@ const Training = () => {
     <section id="courses" className="select-none break-before-auto">
       <details open>
         <summary className="flex w-full cursor-pointer ">
-          <h3 className="w-full mb-5 border-b border-emerald-950/30">
+          <h3 className="w-full mb-5 border-b border-blue-950/30">
             Training, courses, certificates
           </h3>
         </summary>
@@ -53,6 +24,7 @@ const Training = () => {
             <div key={index} className=" md:last:col-span-2">
               <h4>{course.title}</h4>
               <h5>{course.platform}</h5>
+              <h6>{course.seialNumber}</h6>
               <p>
                 <i className="pr-2 fa-regular fa-calendar"></i>
                 {course.date}
