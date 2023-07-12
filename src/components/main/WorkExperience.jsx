@@ -11,6 +11,7 @@ const workExperienceData = [
       "The execution of 3D visualization projects PV",
     ],
     website: "https://solarsense.pl/",
+    websiteName: "solarsense.pl",
     print: false,
   },
   {
@@ -29,6 +30,7 @@ const workExperienceData = [
       "Contributing to the development of new features and improvements to enhance the user experience",
     ],
     website: "http://bestsolution.eco/",
+    websiteName: "bestsolution.eco",
     print: false,
   },
   {
@@ -41,6 +43,7 @@ const workExperienceData = [
       "As an electrician, I specialize in the installation and maintenance of various electrical systems in the company. I am responsible for repairing any faults that may occur and, if necessary, rebuilding the existing electrical installation system. Working in close collaboration with other team members, I am committed to ensuring the proper functioning of all electrical devices and equipment. With my extensive experience in the field, I have developed a keen eye for detail and a strong sense of professionalism. I am highly skilled in monitoring the proper operation of electrical devices and am committed to delivering top-quality work that meets the highest industry standards.",
     ],
     website: "https://gse.info.pl/",
+    websiteName: "gse.info.pl",
     print: true,
   },
   {
@@ -58,6 +61,7 @@ const workExperienceData = [
       "Eight projects were made, which includes an online store, a forum, a landing pages, and a business card sites",
     ],
     website: "https://web.archive.org/web/20220530091720/https://a8a.com.ua/",
+    websiteName: "a8a.com.ua",
     print: false,
   },
   {
@@ -73,6 +77,7 @@ const workExperienceData = [
     ],
     website:
       "https://web.archive.org/web/20210620145435/https://www.opera-ballet.com.ua/",
+    websiteName: "opera-ballet.com.ua",
     print: true,
   },
   {
@@ -83,11 +88,12 @@ const workExperienceData = [
     duration: "02.2017 – 12.2017",
     description: [
       "Starting as a storekeeper for a company specializing in phone accessories, I was responsible for receiving, sorting and picking goods for over 20 stores every morning. On my own initiative I developed an advanced system of sorting, numbering, and tabulation that had never existed before. These changes improved performance, and after a management evaluation, I was promoted.",
-      'As a department head, my responsibilities included managing and delegating tasks to account managers (2 people), storekeepers (2 people), couriers (3 people) and the repair department (2 people).',
-      'One of my main achievements was optimizing the logistics of sending goods and implementing efficient methods to reduce time and costs. I also stopped the turnover by focusing on the right recruitment. My listening skills have helped me understand the needs of employees and solve problems. ',
+      "As a department head, my responsibilities included managing and delegating tasks to account managers (2 people), storekeepers (2 people), couriers (3 people) and the repair department (2 people).",
+      "One of my main achievements was optimizing the logistics of sending goods and implementing efficient methods to reduce time and costs. I also stopped the turnover by focusing on the right recruitment. My listening skills have helped me understand the needs of employees and solve problems. ",
       "At the end of my working period, I was offered the position of head of the regional department, but due to family circumstances and relocation, I had to decline this opportunity.",
     ],
     website: "https://aks-market.ru/",
+    websiteName: "aks-market.ru",
     print: true,
   },
   {
@@ -164,7 +170,7 @@ const WorkExperience = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {experience.website}
+                    {experience.websiteName}
                   </a>
                 </div>
               )}

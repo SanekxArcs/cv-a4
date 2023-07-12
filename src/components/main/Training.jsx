@@ -48,9 +48,9 @@ const Training = () => {
             Training, courses, certificates
           </h3>
         </summary>
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
           {courses.map((course, index) => (
-            <div key={index} className=" last:col-span-2">
+            <div key={index} className=" md:last:col-span-2">
               <h4>{course.title}</h4>
               <h5>{course.platform}</h5>
               <p>
