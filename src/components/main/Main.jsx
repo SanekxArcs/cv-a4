@@ -27,7 +27,7 @@ const Main = ({ nameRef }) => {
             can utilize my skills and creative potential.
             <br />
             <a
-              href="https://o-d.netlify.app/"
+              href="https://v-l.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >

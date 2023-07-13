@@ -4,14 +4,10 @@ import img1 from "./../../assets/1.jpg";
 import img2 from "./../../assets/2.jpg";
 import img3 from "./../../assets/3.jpg";
 import img4 from "./../../assets/4.jpg";
-import img5 from "./../../assets/5.jpg";
-import img6 from "./../../assets/6.jpg";
 import img7 from "./../../assets/7.jpg";
 import img8 from "./../../assets/8.jpg";
 
 const Projects = () => {
-
-
   return (
     <section id="projects" className="break-before-auto">
       <motion.details open>
@@ -23,41 +19,35 @@ const Projects = () => {
 
         <motion.div className="grid gap-4 lg:grid-cols-2 h-[450px]">
           <div className="grid gap-4 grid-cols-2 grid-rows-1 ">
-            <img
-              className="rounded-xl ring-2 overflow-hidden w-full h-full bg-cover"
-              src={img1}
-              alt=""
-            />
-            <img
-              className="rounded-xl ring-2 overflow-hidden w-full h-full bg-cover"
-              src={img2}
-              alt=""
-            />
+            <div
+              className="rounded-xl ring-2 overflow-hidden w-full h-full bg-cover bg-center"
+              style={{ backgroundImage: `url(${img1})` }}
+            ></div>
+            <div
+              className="rounded-xl ring-2 overflow-hidden w-full h-full bg-cover bg-center"
+              style={{ backgroundImage: `url(${img2})` }}
+            ></div>
           </div>
 
           <div className="grid gap-4 grid-cols-2 grid-rows-1 ">
-            <img
-              className="rounded-xl ring-2 overflow-hidden w-full h-full bg-cover"
-              src={img7}
-              alt=""
-            />
-            <img
-              className="rounded-xl ring-2 overflow-hidden w-full h-full bg-cover"
-              src={img4}
-              alt=""
-            />
+            <div
+              className="rounded-xl ring-2 overflow-hidden w-full h-full bg-cover bg-center"
+              style={{ backgroundImage: `url(${img7})` }}
+            ></div>
+            <div
+              className="rounded-xl ring-2 overflow-hidden w-full h-full bg-cover bg-center"
+              style={{ backgroundImage: `url(${img4})` }}
+            ></div>
           </div>
 
-          <img
-            className="rounded-xl ring-2 overflow-hidden shadow-md w-full h-full bg-cover"
-            src={img3}
-            alt=""
-          />
-          <img
-            className="rounded-xl ring-2 overflow-hidden shadow-md w-full h-full bg-cover"
-            src={img8}
-            alt=""
-          />
+          <div
+            className="rounded-xl ring-2 overflow-hidden shadow-md w-full h-full bg-cover bg-center"
+            style={{ backgroundImage: `url(${img3})` }}
+          ></div>
+          <div
+            className="rounded-xl ring-2 overflow-hidden shadow-md w-full h-full bg-cover bg-center row-start-1"
+            style={{ backgroundImage: `url(${img8})` }}
+          ></div>
         </motion.div>
       </motion.details>
     </section>

@@ -2,7 +2,7 @@
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: #aae9d2 hsla(217, 33%, 17%, 0);
+    scrollbar-color: #d4e7fe hsla(217, 33%, 17%, 0);
 }
 
 *::-webkit-scrollbar {
@@ -10,11 +10,11 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: hsla(217, 33%, 17%, 0);
+    background: #d4e7fe;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #aae9d2;
+    background-color: #d4e7fe;
     border-radius: 5px;
     border: 2px solid #022c22;
 }
