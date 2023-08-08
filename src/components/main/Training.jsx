@@ -3,13 +3,23 @@ import React from "react";
 const Training = () => {
   const courses = [
     {
+      title: "The Ultimate React Course 2023: React, Redux & More",
+      platform: "Udemy by Jonas Schmedtmann",
+      date: "07.2023",
+    },
+    {
+      title: "JavaScript + React - from zero to the result",
+      platform: "Udemy by Ivan Petrychenko",
+      date: "02.2023",
+    },
+    {
       title: "The Complete JavaScript Course 2022: From Zero to Expert!",
-      platform: "Udemy",
+      platform: "Udemy by Jonas Schmedtmann",
       date: "10.2022",
     },
     {
       title: "Build a responsive real-world website with HTML and CSS",
-      platform: "Udemy",
+      platform: "Udemy by Jonas Schmedtmann",
       date: "09.2022",
     },
     {
