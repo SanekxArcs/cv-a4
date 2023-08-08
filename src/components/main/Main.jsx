@@ -19,16 +19,21 @@ const Main = ({ nameRef }) => {
           <motion.h1>Oleksandr Dzisiak</motion.h1>
           <motion.h2>Frontend developer</motion.h2>
           <motion.p ref={nameRef} className="text-lg">
-            I am a highly motivated <b>developer</b> with a passion for creating
-            visually appealing and user-friendly web applications. My skills
-            include proficiency in
-            <b> HTML, CSS, JavaScript,</b> as well as experience with popular
-            frameworks such as <b>React.js</b>. I am always eager to learn new
-            technologies and stay current with industry trends. I am a quick
-            learner and a team player, and I am dedicated to delivering
-            high-quality work on time. And i love to refactor code and
-            constantly learn new things in JS,
-            <b> love to write code</b> and see the results of my efforts. <br />
+            I am a highly <b>motivated</b>  professional with a passion for creating
+            visually appealing and user-friendly web applications. My expertise
+            encompasses effective interaction and exchange of information to
+            ensure seamless communication. I excel in collaborative efforts
+            towards a common goal, demonstrating teamwork that guides and
+            inspires a group towards success. <br /> In addition to my proficiency in
+            <b>HTML, CSS, JavaScript </b>, I specialize in finding solutions to
+            challenges and obstacles, showcasing my adaptability and
+            problem-solving skills. Also i have experience with popular
+            frameworks such as <b>React.js</b> . <br /> Time management is another forte, as I
+            am adept at efficient allocation and utilization of time, ensuring
+            timely delivery of high-quality work. Beyond this, I actively seek
+            to learn and integrate new technologies, reflecting my dedication to
+            continuous improvement.
+            <br />
             <a
               href="https://o-d.netlify.app/"
               target="_blank"
