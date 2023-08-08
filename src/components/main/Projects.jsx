@@ -112,7 +112,7 @@ const projectsData2 = [
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="h-full p-5 transition-all rounded-md bg-gradient-to-br from-emerald-200 dark:from-emerald-600 to-emerald-300 dark:to-emerald-700 top-2 animate-fadeIn">
+              <div className="h-full p-5 transition-all rounded-md hover-btn bg-gradient-to-br from-emerald-200 dark:from-emerald-600 to-emerald-300 dark:to-emerald-700 top-2 animate-fadeIn">
                 <h4 className="font-bold">{project.title}</h4>
                 {project.description && (
                   <p className="">{project.description}</p>
