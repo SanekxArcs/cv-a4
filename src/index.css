@@ -21,7 +21,7 @@
 @layer base {
 
 h1 {
-        @apply pb-0 text-6xl font-medium;
+        @apply  pb-0 text-6xl font-medium ;
     }
 
 h2 {
