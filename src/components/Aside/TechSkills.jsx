@@ -3,36 +3,26 @@ import { motion } from "framer-motion";
 
 const TechSkills = () => {
   const techs = [
-    "HTML5",
-    "CSS3",
-    "Tailwind CSS",
-    "SCSS",
-    "Bootstrap",
+    "HTML",
+    "CSS",
+    "SASS/LESS",
     "JavaScript",
     "TypeScript",
-    "jQuery",
-    "ReactJS",
-    "React Router",
+    "React.JS",
     "Redux",
-    "Vite",
     "Git/GitHub",
-    "Netlify",
-    "Vercel",
-    "CMS platforms",
-    "REST",
-    "Ajax",
     "Figma",
-    "AI",
     "Photoshop",
-    "Lightroom",
-    "Framer Motion",
-    "and other ...",
+    "AI",
+    "Other ...",
   ];
 
   return (
     <>
       <motion.div className="select-none break-before-auto">
-        <h3 className="select-none">Tech Skills</h3>
+        <h3 className="select-none">
+          <i class="fa-solid fa-laptop-code pr-2"></i>Tech Skills
+        </h3>
         <ul className="flex flex-wrap gap-2">
           {techs.map((tech) => (
             <li key={tech} className="liTechSkills hover-btn last:text-sm">

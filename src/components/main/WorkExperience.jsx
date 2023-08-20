@@ -117,13 +117,14 @@ const WorkExperience = () => {
       <details open className="flex flex-col gap-5">
         <summary className="flex cursor-pointer ">
           <h3 className="w-full mb-5 border-b border-emerald-950/30">
+            <i class="pr-2 fa-solid fa-briefcase"></i>
             Work experience
           </h3>
         </summary>
 
         <div className="flex flex-col gap-5">
           {workExperienceData.map((experience, index) => (
-            <div key={index} className="break-before-auto">
+            <div key={index} className={`${experience.print ? "print:hidden" : ""} break-before-auto`}>
               {experience.jobTitle2 ? (
                 <h4>
                   <span className="text-sm font-light ">from </span>
@@ -149,7 +150,10 @@ const WorkExperience = () => {
                 <i className="pr-2 fa-regular fa-calendar"></i>
                 {experience.duration}
               </p>
-              <details open className={`${experience.print ? "print:hidden" : ""}`}>
+              <details
+                open
+                className={`${experience.print ? "print:hidden" : ""}`}
+              >
                 <summary className="flex cursor-pointer">
                   <h6 className="transition-all hover:font-normal ">
                     Short job Description:
@@ -161,7 +165,7 @@ const WorkExperience = () => {
                   ))}
                 </ul>
               </details>
-              
+
               {experience.website && (
                 <div className={`hover-btn`}>
                   <i className="pr-2 fa-solid fa-globe"></i>

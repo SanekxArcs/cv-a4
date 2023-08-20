@@ -25,7 +25,7 @@ const Main = ({ nameRef }) => {
             ensure seamless communication. I excel in collaborative efforts
             towards a common goal, demonstrating teamwork that guides and
             inspires a group towards success. <br /> In addition to my proficiency in
-            <b>HTML, CSS, JavaScript </b>, I specialize in finding solutions to
+            <b> HTML, CSS, JavaScript </b>, I specialize in finding solutions to
             challenges and obstacles, showcasing my adaptability and
             problem-solving skills. Also i have experience with popular
             frameworks such as <b>React.js</b> . <br /> Time management is another forte, as I
@@ -40,7 +40,7 @@ const Main = ({ nameRef }) => {
               rel="noopener noreferrer"
             >
               <span className="p-2 text-xs transition-all rounded-lg hover:ring-2 ring-emerald-400">
-                <i className="pr-2 fa-solid fa-link "></i>Click here to see my
+                <i className="pr-2 fa-solid fa-link "></i>Click here to see my <b>full</b> and 
                 latest resume updates
               </span>
             </a>

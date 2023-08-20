@@ -23,6 +23,7 @@ const Education = () => {
       <details open>
         <summary className="flex w-full cursor-pointer">
           <h3 className="w-full mb-5 border-b border-emerald-950/30">
+            <i class="fa-solid fa-graduation-cap pr-2"></i>
             Education
           </h3>
         </summary>

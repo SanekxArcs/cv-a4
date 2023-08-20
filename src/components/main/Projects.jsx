@@ -100,6 +100,7 @@ const projectsData2 = [
       <motion.details open>
         <summary className="flex">
           <h3 className="w-full mb-5 border-b cursor-pointer border-emerald-950/30">
+            <i class="fa-solid fa-earth-americas pr-2"></i>
             Projects
           </h3>
         </summary>

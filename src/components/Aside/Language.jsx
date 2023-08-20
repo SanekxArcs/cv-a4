@@ -4,7 +4,9 @@ const Language = () => {
   return (
     <>
       <div className="select-none break-before-auto">
-        <h3>Languages</h3>
+        <h3>
+          <i class="fa-solid fa-language pr-2"></i>Languages
+        </h3>
         <ul className="flex flex-col gap-1">
           <li className="flex flex-row items-center gap-2">
             <svg

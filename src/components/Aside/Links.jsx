@@ -4,7 +4,9 @@ const Links = () => {
   return (
     <>
       <div className="break-before-avoid">
-        <h3>Links</h3>
+        <h3>
+          <i class="fa-solid fa-link pr-2"></i>Links
+        </h3>
         <ul className="flex flex-col gap-1">
           <li className={`liContacts hover-btn`}>
             <i className="fa-brands fa-github"></i>

@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 const Contacts = () => {
   return (
     <>
-      <motion.div
-        className="break-before-auto"
-      >
+      <motion.div className="break-before-auto">
         <details open>
           <summary className="flex cursor-pointer marker:hidden">
-            <h3 className="pointer-events-none select-none">Contacts</h3>
+            <h3 className="pointer-events-none select-none">
+              <i class="fa-regular fa-address-card pr-2"></i>Contacts
+            </h3>
           </summary>
           <ul className="flex flex-col items-start justify-start gap-2">
             <li className="text-sm liContacts lg:text-base hover-btn">
