@@ -3,7 +3,7 @@ import React from "react";
 const Interests = () => {
   return (
     <>
-      <div className="select-none break-before-auto print:hidden">
+      <div className="pb-10 select-none break-before-auto print:hidden">
         <h3>
           <i class="fa-solid fa-circle-exclamation pr-2"></i>Interests
         </h3>
