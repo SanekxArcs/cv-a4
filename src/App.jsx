@@ -9,6 +9,15 @@ import Footer from "./components/Footer";
 
 function App() {
   const ref = useRef(null);
+  let docTitle = document.title,
+    langTitle = "Come back👏🏻";
+    
+  window.addEventListener("blur", () => {
+    document.title = langTitle;
+  });
+  window.addEventListener("focus", () => {
+    document.title = docTitle;
+  });
 
   const [isOpen, setIsOpen] = useState(false);
   const { ref: imageRef, inView: imageIsVisible } = useInView({
