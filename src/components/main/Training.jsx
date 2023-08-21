@@ -77,10 +77,6 @@ const Training = () => {
             >
               <h4>{course.title}</h4>
               <h5>{course.platform}</h5>
-              <p>
-                <i className="pr-2 fa-regular fa-calendar"></i>
-                {course.date}
-              </p>
             </div>
           ))}
         </div>
