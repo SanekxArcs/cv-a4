@@ -12,10 +12,6 @@ const Education = () => {
       specialization:
         "Maintenance of automated power equipment in power plants",
     },
-    {
-      institution: "Netishyn School №3",
-      specialization: "Philology",
-    },
   ];
 
   return (

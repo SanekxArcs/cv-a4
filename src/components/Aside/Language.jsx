@@ -37,7 +37,7 @@ const Language = () => {
                 ></path>
               </g>
             </svg>
-            English - B1
+            English - B2
           </li>
           <li className="flex flex-row items-center gap-2">
             <svg

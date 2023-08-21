@@ -32,7 +32,7 @@ const Contacts = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Poland
+                Poland, Warsaw
               </a>
             </li>
           </ul>

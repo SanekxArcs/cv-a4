@@ -8,11 +8,11 @@ const Interests = () => {
           <i class="fa-solid fa-circle-exclamation pr-2"></i>Interests
         </h3>
         <ul className="flex flex-col gap-1">
-          <li>Development</li>
+          <li>Self development</li>
           <li>3D Modeling</li>
-          <li>Snowboarding</li>
-          <li>Tennis</li>
-          <li>Racing</li>
+          <li>Create a new thing</li>
+          <li>Read books / blog about IT</li>
+          <li>Tech</li>
         </ul>
       </div>
     </>

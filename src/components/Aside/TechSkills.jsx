@@ -11,6 +11,7 @@ const TechSkills = () => {
     "React.JS",
     "Redux",
     "Git/GitHub",
+    "Firebase",
     "Figma",
     "Photoshop",
     "AI",

@@ -2,12 +2,13 @@ const workExperienceData = [
   {
     jobTitle: "Frontend developer | Electrical engineer",
     companyName: "Solar Sense Krzysztof Gutter",
-    location: "Warsaw",
-    duration: "03.2022 – Now",
+    location: "Poland, Warsaw",
+    duration: "03.2023 – 08.2023",
     description: [
       "Design and create multi-page site on react",
-      "The project is currently underway for the development of a corporate website and e-commerce platform",
-      "A calculation tool is currently being developed",
+      "Optimize website for performance to get a 99 page speed test and SEO;",
+      "A big calculation tool in Google sheets",
+      "Create a generator of PDF docs from data and calculations",
       "The execution of 3D visualization projects PV",
     ],
     website: "https://solarsense.pl/",
@@ -17,7 +18,7 @@ const workExperienceData = [
   {
     jobTitle: "Frontend developer",
     companyName: "Best Solution Eco Sp. z o. o.",
-    location: "Warsaw",
+    location: "Poland, Warsaw",
     duration: "07.2022 – 03.2023",
     description: [
       "Maintaining and updating the website to ensure proper and efficient functioning",
@@ -84,7 +85,6 @@ const workExperienceData = [
     jobTitle: "Warehouseman",
     jobTitle2: "Department Manager",
     companyName: "AKS!",
-    location: "Russia",
     duration: "02.2017 – 12.2017",
     description: [
       "Starting as a storekeeper for a company specializing in phone accessories, I was responsible for receiving, sorting and picking goods for over 20 stores every morning. On my own initiative I developed an advanced system of sorting, numbering, and tabulation that had never existed before. These changes improved performance, and after a management evaluation, I was promoted.",
@@ -92,8 +92,6 @@ const workExperienceData = [
       "One of my main achievements was optimizing the logistics of sending goods and implementing efficient methods to reduce time and costs. I also stopped the turnover by focusing on the right recruitment. My listening skills have helped me understand the needs of employees and solve problems. ",
       "At the end of my working period, I was offered the position of head of the regional department, but due to family circumstances and relocation, I had to decline this opportunity.",
     ],
-    website: "https://aks-market.ru/",
-    websiteName: "aks-market.ru",
     print: true,
   },
   {
@@ -124,7 +122,12 @@ const WorkExperience = () => {
 
         <div className="flex flex-col gap-5">
           {workExperienceData.map((experience, index) => (
-            <div key={index} className={`${experience.print ? "print:hidden" : ""} break-before-auto`}>
+            <div
+              key={index}
+              className={`${
+                experience.print ? "print:hidden" : ""
+              } break-before-auto`}
+            >
               {experience.jobTitle2 ? (
                 <h4>
                   <span className="text-sm font-light ">from </span>
@@ -133,19 +136,18 @@ const WorkExperience = () => {
                   {experience.jobTitle2}
                 </h4>
               ) : (
-                <h4>
-                  {experience.jobTitle}
-                </h4>
+                <h4>{experience.jobTitle}</h4>
               )}
 
               <h5>
                 <i className="pr-2 fa-regular fa-building"></i>
                 {experience.companyName}
               </h5>
-              <p>
+              {experience.location && <p>
                 <i className="pr-2 fa-solid fa-location-dot"></i>
                 {experience.location}
-              </p>
+              </p>}
+              
               <p>
                 <i className="pr-2 fa-regular fa-calendar"></i>
                 {experience.duration}

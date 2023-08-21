@@ -15,7 +15,7 @@ const Main = ({ nameRef }) => {
         viewport={true}
         className="flex flex-col col-span-2 gap-10 px-5"
       >
-        <div id="top" className="hidden select-none md:block">
+        <div id="top" className="hidden md:block">
           <motion.h1 className="">Oleksandr Dzisiak</motion.h1>
           <motion.h2 className="">Frontend developer</motion.h2>
           <motion.p ref={nameRef} className="text-lg">
