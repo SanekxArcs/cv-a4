@@ -1,4 +1,5 @@
 import React from "react";
+import { Map, Banknote } from "lucide-react";
 import { motion } from "framer-motion";
 const Contacts = () => {
   return (
@@ -34,6 +35,12 @@ const Contacts = () => {
               >
                 Poland, Warsaw
               </a>
+            </li>
+            <li className="liContacts">
+              <Map /> <p>Ready for relocation</p>
+            </li>
+            <li className="liContacts">
+              <Banknote /> <p>B2B / Permanent</p>
             </li>
           </ul>
         </details>

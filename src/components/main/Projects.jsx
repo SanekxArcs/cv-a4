@@ -13,7 +13,8 @@ const projectsData = [
       "Multi-Page Layout",
       "Fully Responsive",
       "PageSpeed 99-100",
-      "Next step transform to Corporate",
+      "Calculator",
+      "Validation",
     ],
     technologies: [
       "Vite",
@@ -29,10 +30,11 @@ const projectsData = [
     title: "LIBERTY IMMIGRATION",
     description: "Landing-page",
     features: [
-      "Multi-language page",
+      "Landing page",
       "Animation when element is visible",
       "Fully Responsive",
       "Contact form",
+      "UA and BY languages",
     ],
     technologies: [
       "React.js",
@@ -45,19 +47,25 @@ const projectsData = [
     url: "https://l-i.netlify.app/",
   },
   {
-    title: "UWP-DIGITAL",
-    description: "Corporative",
+    title: "Book List App",
+    description: "SPA",
     features: [
-      "FullHD ONLY!",
-      "Pixel-Perfect",
-      "Modals",
-      "Slider",
-      "Contact Form",
+      "Responsive",
+      "Filter ",
+      "Displays data from database",
+      "Add / Edit / Update / Delete",
+      "Toasts alerts",
     ],
-    technologies: ["Html5", "JavaScript", "jQuery", "Tailwind CSS", "Netlify"],
+    technologies: [
+      "Html5",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Netlify",
+      "Shadcn/ui",
+    ],
     url: "http://whatismyscreenresolution.net/multi-screen-test?site-url=https://uwp-digital.netlify.app/&w=1920&h=1080",
   },
-
 ];
 const projectsData2 = [
   {
