@@ -64,7 +64,7 @@ const projectsData = [
       "Netlify",
       "Shadcn/ui",
     ],
-    url: "http://whatismyscreenresolution.net/multi-screen-test?site-url=https://uwp-digital.netlify.app/&w=1920&h=1080",
+    url: "https://main--demo-book-list.netlify.app/",
   },
 ];
 const projectsData2 = [

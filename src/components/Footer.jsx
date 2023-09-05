@@ -1,8 +1,10 @@
 import React from "react";
+import Rodo from "./main/Rodo";
 
 const Footer = () => {
   return (
     <>
+    <Rodo/>
       <footer
         className={`print:hidden flex flex-col items-center justify-center px-4 py-2 m-2 mt-10 text-center rounded-md backdrop-blur-md top-2 bg-emerald-300/30 animate-fadeIn`}
       >

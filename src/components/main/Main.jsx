@@ -4,6 +4,7 @@ import Projects from "./Projects";
 import WorkExperience from "./WorkExperience";
 import Education from "./Education/Education";
 import Training from "./Training";
+import Rodo from "./Rodo";
 
 const Main = ({ nameRef }) => {
   return (

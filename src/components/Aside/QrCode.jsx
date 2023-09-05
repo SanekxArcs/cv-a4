@@ -14,7 +14,7 @@ const SVGComponent = (props) => (
     fill="transparent"
     {...props}
   >
-    <rect x={0} y={0} width={2145} height={2145} fill="" />
+    <rect x={0} y={0} width={300} height={300} fill="" />
     <g transform="translate(66,66)">
       <g transform="translate(264,0) scale(0.33,0.33)">
         <g

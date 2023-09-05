@@ -120,13 +120,13 @@ const WorkExperience = () => {
           </h3>
         </summary>
 
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 ">
           {workExperienceData.map((experience, index) => (
             <div
               key={index}
               className={`${
                 experience.print ? "print:hidden" : ""
-              } break-before-auto`}
+              } break-before-avoid`}
             >
               {experience.jobTitle2 ? (
                 <h4>
@@ -143,11 +143,13 @@ const WorkExperience = () => {
                 <i className="pr-2 fa-regular fa-building"></i>
                 {experience.companyName}
               </h5>
-              {experience.location && <p>
-                <i className="pr-2 fa-solid fa-location-dot"></i>
-                {experience.location}
-              </p>}
-              
+              {experience.location && (
+                <p>
+                  <i className="pr-2 fa-solid fa-location-dot"></i>
+                  {experience.location}
+                </p>
+              )}
+
               <p>
                 <i className="pr-2 fa-regular fa-calendar"></i>
                 {experience.duration}
