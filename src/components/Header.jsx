@@ -15,7 +15,7 @@ const Header = ({ isOpen, onClickHandle, nameIsVisible, imageIsVisible }) => {
           initial={{ opacity: 0, scale: 0.5, y: -200 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className={`sticky z-10 flex items-center justify-between px-4 py-2 m-2 rounded-md bg-gradient-to-br  from-emerald-200/50 dark:from-emerald-600/50 to-emerald-300/50 dark:to-emerald-700/50 backdrop-blur-md top-2  print:hidden relative max-h-14`}
+          className={`sticky z-10 flex items-center justify-between px-4 py-2 m-2 rounded-md bg-gradient-to-br  from-emerald-200/50 dark:from-emerald-600/50 to-emerald-300/50 dark:to-emerald-700/50 backdrop-blur-md top-2  print:hidden max-h-14`}
         >
           <motion.div className="flex items-center gap-2">
             {imageIsVisible || (

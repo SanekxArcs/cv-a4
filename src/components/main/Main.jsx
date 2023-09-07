@@ -4,7 +4,7 @@ import Projects from "./Projects";
 import WorkExperience from "./WorkExperience";
 import Education from "./Education/Education";
 import Training from "./Training";
-import Rodo from "./Rodo";
+import TimeLine from "./../time-line";
 
 const Main = ({ nameRef }) => {
   return (
@@ -48,6 +48,7 @@ const Main = ({ nameRef }) => {
             </a>
           </motion.p>
         </div>
+        <TimeLine/>
 
         <Projects />
 

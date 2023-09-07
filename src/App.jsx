@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ThemeProvider } from "@/components/theme-provider"
 import { useInView } from "react-intersection-observer";
 import { useRef } from "react";
 import { motion } from "framer-motion";
@@ -32,6 +33,7 @@ function App() {
   };
   return (
     <>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Header
         imageIsVisible={imageIsVisible}
         nameIsVisible={nameIsVisible}
@@ -46,8 +48,10 @@ function App() {
         <Main nameRef={nameRef} />
       </motion.div>
       <Footer />
+    </ThemeProvider>
     </>
   );
 }
 
 export default App;
+
